@@ -521,10 +521,19 @@ body.nav-open {
   margin: 0 0 0.75rem;
 }
 
+.program-heading {
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
 .program-card p {
   margin: 0 0 1.25rem;
   color: var(--color-black-soft);
   font-size: 1rem;
+}
+
+.program-blurb {
+  margin-bottom: 1.25rem !important;
 }
 
 .program-schedule {
@@ -537,13 +546,52 @@ body.nav-open {
   line-height: 1.55;
 }
 
-.program-schedule strong {
+.program-block {
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--color-gray-light);
+}
+
+.program-block:last-of-type {
+  border-bottom: none;
+  padding-bottom: 0;
+  margin-bottom: 0.85rem;
+}
+
+.program-block-title {
+  margin: 0 0 0.35rem !important;
+}
+
+.program-block-title strong {
   color: var(--color-black);
 }
 
+.program-venue {
+  margin: 0 0 0.35rem !important;
+  font-size: 0.92rem !important;
+  line-height: 1.5 !important;
+  color: var(--color-gray) !important;
+}
+
+.program-time {
+  margin: 0 !important;
+  font-size: 0.98rem !important;
+  font-weight: 600;
+  color: var(--color-black-soft) !important;
+}
+
 .program-schedule .program-start {
+  margin-top: 0.25rem;
   margin-bottom: 0;
   color: var(--color-red-dark);
+}
+
+.program-schedule .program-start strong {
+  color: inherit;
+}
+
+.program-schedule strong {
+  color: var(--color-black);
 }
 
 .card-link {
