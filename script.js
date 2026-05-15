@@ -156,7 +156,9 @@
     });
   }
 
-  var revealTargets = document.querySelectorAll(".section-header, .program-card, .about-inner, .registration-form, .contact-grid");
+  var revealTargets = document.querySelectorAll(
+    ".section-header, .program-card, .about-inner, .camp-cta-row, .camp-weeks-lead, .camp-checkout-note, .registration-form, .contact-grid"
+  );
   revealTargets.forEach(function (el) {
     el.classList.add("reveal");
   });
