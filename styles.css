@@ -285,6 +285,9 @@ body.nav-open {
   z-index: 2;
   max-width: 720px;
   margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .hero-logo {
@@ -330,10 +333,11 @@ body.nav-open {
 }
 
 .hero-lead {
-  margin: 0 0 2rem;
+  margin: 0;
+  margin-inline: auto;
+  padding-bottom: 0.25rem;
   color: rgba(255, 255, 255, 0.78);
   max-width: 560px;
-  margin-inline: auto;
 }
 
 .animate-in {
