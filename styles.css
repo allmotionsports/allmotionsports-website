@@ -500,6 +500,25 @@ body.nav-open {
   font-size: 1rem;
 }
 
+.program-schedule {
+  margin-bottom: 1rem;
+}
+
+.program-schedule p {
+  margin: 0 0 0.85rem;
+  font-size: 0.98rem;
+  line-height: 1.55;
+}
+
+.program-schedule strong {
+  color: var(--color-black);
+}
+
+.program-schedule .program-start {
+  margin-bottom: 0;
+  color: var(--color-red-dark);
+}
+
 .card-link {
   font-weight: 600;
   font-size: 0.95rem;
