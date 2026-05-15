@@ -39,86 +39,6 @@
   window.addEventListener("scroll", onScroll, { passive: true });
   onScroll();
 
-  var form = document.getElementById("registration-form");
-  var successEl = document.getElementById("form-success");
-
-  if (form && successEl) {
-    form.addEventListener("submit", function (e) {
-      e.preventDefault();
-
-      successEl.style.background = "";
-      successEl.style.color = "";
-      successEl.style.borderColor = "";
-
-      var parentName = document.getElementById("parentName");
-      var childName = document.getElementById("childName");
-      var childAge = document.getElementById("childAge");
-      var email = document.getElementById("email");
-      var phone = document.getElementById("phone");
-      var program = form.querySelector('input[name="program"]:checked');
-
-      if (!parentName || !childName || !childAge || !email || !phone) return;
-
-      if (!parentName.value.trim() || !childName.value.trim()) {
-        successEl.hidden = false;
-        successEl.style.background = "rgba(196, 30, 58, 0.1)";
-        successEl.style.color = "#8b1530";
-        successEl.style.borderColor = "rgba(196, 30, 58, 0.25)";
-        successEl.textContent = "Please fill in all required fields.";
-        return;
-      }
-
-      var age = parseInt(childAge.value, 10);
-      if (isNaN(age) || age < 6 || age > 14) {
-        successEl.hidden = false;
-        successEl.style.background = "rgba(196, 30, 58, 0.1)";
-        successEl.style.color = "#8b1530";
-        successEl.style.borderColor = "rgba(196, 30, 58, 0.25)";
-        successEl.textContent = "Child age must be between 6 and 14.";
-        return;
-      }
-
-      if (!email.validity.valid || !email.value.trim()) {
-        successEl.hidden = false;
-        successEl.style.background = "rgba(196, 30, 58, 0.1)";
-        successEl.style.color = "#8b1530";
-        successEl.style.borderColor = "rgba(196, 30, 58, 0.25)";
-        successEl.textContent = "Please enter a valid email address.";
-        return;
-      }
-
-      if (!phone.value.trim()) {
-        successEl.hidden = false;
-        successEl.style.background = "rgba(196, 30, 58, 0.1)";
-        successEl.style.color = "#8b1530";
-        successEl.style.borderColor = "rgba(196, 30, 58, 0.25)";
-        successEl.textContent = "Please enter a phone number.";
-        return;
-      }
-
-      if (!program) {
-        successEl.hidden = false;
-        successEl.style.background = "rgba(196, 30, 58, 0.1)";
-        successEl.style.color = "#8b1530";
-        successEl.style.borderColor = "rgba(196, 30, 58, 0.25)";
-        successEl.textContent = "Please select a program.";
-        return;
-      }
-
-      successEl.style.background = "rgba(34, 139, 34, 0.1)";
-      successEl.style.color = "#1a5c1a";
-      successEl.style.borderColor = "rgba(34, 139, 34, 0.25)";
-      successEl.hidden = false;
-      successEl.textContent =
-        "Thank you! Your registration details have been recorded. We will contact you at " +
-        email.value.trim() +
-        " shortly.";
-
-      form.reset();
-      successEl.scrollIntoView({ behavior: "smooth", block: "nearest" });
-    });
-  }
-
   var lightbox = document.getElementById("gallery-lightbox");
   var lightboxImg = lightbox ? lightbox.querySelector(".gallery-lightbox-img") : null;
   var lightboxClose = lightbox ? lightbox.querySelector(".gallery-lightbox-close") : null;
@@ -157,7 +77,7 @@
   }
 
   var revealTargets = document.querySelectorAll(
-    ".section-header, .program-card, .about-inner, .camp-cta-row, .camp-weeks-lead, .camp-checkout-note, .registration-form, .contact-grid"
+    ".section-header, .program-card, .about-inner, .camp-weeks-lead, .contact-grid"
   );
   revealTargets.forEach(function (el) {
     el.classList.add("reveal");
