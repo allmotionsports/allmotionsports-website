@@ -1058,6 +1058,243 @@ body.nav-open {
   color: var(--color-black-soft);
 }
 
+/* Donate — fundraising */
+.donate {
+  background:
+    radial-gradient(ellipse 70% 50% at 50% 0%, rgba(196, 30, 58, 0.1) 0%, transparent 55%),
+    #fff9f9;
+}
+
+.donate-inner {
+  max-width: 1080px;
+  margin-inline: auto;
+}
+
+.donate-header .donate-title {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 5vw, 2.75rem);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.donate-eyebrow {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--color-red-dark);
+  margin: 0 0 0.5rem;
+}
+
+.donate-subtitle {
+  font-size: clamp(1.05rem, 2.4vw, 1.2rem);
+  font-weight: 500;
+  color: var(--color-gray);
+  margin: 0;
+}
+
+.donate-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.05fr);
+  gap: 1.75rem;
+  align-items: start;
+}
+
+@media (max-width: 900px) {
+  .donate-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+.donate-story p {
+  margin: 0 0 1rem;
+  font-size: 0.98rem;
+  line-height: 1.65;
+  color: var(--color-black-soft);
+}
+
+.donate-benefits {
+  margin: 0 0 1rem;
+  padding-left: 1.25rem;
+  line-height: 1.65;
+  color: var(--color-black-soft);
+}
+
+.donate-benefits li {
+  margin-bottom: 0.45rem;
+}
+
+.donate-closing {
+  margin-bottom: 1.25rem !important;
+}
+
+.donate-cta {
+  display: inline-flex;
+  width: 100%;
+  text-decoration: none;
+  box-sizing: border-box;
+  margin-bottom: 0.65rem;
+}
+
+.donate-cta:hover {
+  color: var(--color-white);
+}
+
+.donate-secure-note {
+  margin: 0 !important;
+  font-size: 0.9rem !important;
+  color: var(--color-gray) !important;
+  text-align: center;
+}
+
+.donate-fundraising {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.donate-progress-heading,
+.donate-longterm-heading,
+.donate-transparency-heading {
+  font-family: var(--font-display);
+  font-size: 1.45rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin: 0 0 1rem;
+  color: var(--color-black);
+}
+
+.donate-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.85rem;
+  margin-bottom: 1.25rem;
+}
+
+@media (min-width: 520px) {
+  .donate-stats-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+.donate-stat {
+  padding: 0.75rem 0.85rem;
+  background: var(--color-red-soft);
+  border-radius: 12px;
+  border: 1px solid rgba(196, 30, 58, 0.12);
+  text-align: center;
+}
+
+.donate-stat-label {
+  display: block;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-gray);
+  margin-bottom: 0.25rem;
+}
+
+.donate-stat-value {
+  display: block;
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--color-red-dark);
+  line-height: 1.2;
+}
+
+.donate-progress-track {
+  position: relative;
+  height: 14px;
+  background: var(--color-gray-light);
+  border-radius: 999px;
+  overflow: visible;
+  margin-bottom: 1.25rem;
+}
+
+.donate-progress-fill {
+  height: 100%;
+  width: 0;
+  background: linear-gradient(90deg, var(--color-red), var(--color-red-dark));
+  border-radius: 999px;
+  transition: width 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+  box-shadow: 0 2px 12px rgba(196, 30, 58, 0.35);
+}
+
+.donate-milestone-markers {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.donate-milestone-marker {
+  position: absolute;
+  top: 50%;
+  width: 3px;
+  height: 22px;
+  background: var(--color-black-soft);
+  border-radius: 2px;
+  transform: translate(-50%, -50%);
+  opacity: 0.35;
+}
+
+.donate-milestones-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 0.92rem;
+  line-height: 1.55;
+  color: var(--color-black-soft);
+}
+
+.donate-milestones-list li {
+  margin-bottom: 0.45rem;
+  padding-left: 0.15rem;
+}
+
+.donate-milestones-list li:last-child {
+  margin-bottom: 0;
+}
+
+.donate-longterm p {
+  margin: 0;
+  font-size: 0.98rem;
+  line-height: 1.65;
+  color: var(--color-black-soft);
+}
+
+.donate-transparency-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin: 0;
+}
+
+.donate-transparency-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 0.35rem 1rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid var(--color-gray-light);
+}
+
+.donate-transparency-row:last-child {
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.donate-transparency-row dt {
+  font-weight: 600;
+  color: var(--color-black);
+}
+
+.donate-transparency-row dd {
+  margin: 0;
+  font-weight: 700;
+  color: var(--color-red-dark);
+}
+
 /* About */
 .about {
   background: var(--color-black);

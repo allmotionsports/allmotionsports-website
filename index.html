@@ -27,6 +27,7 @@
           <li><a href="#summer-volleyball">July Program</a></li>
           <li><a href="#summer-camp">Summer Camp</a></li>
           <li><a href="#about">About</a></li>
+          <li><a href="#donate">Donate</a></li>
           <li><a href="#registration">Registration</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
@@ -373,6 +374,86 @@
       </div>
     </section>
 
+    <section class="section donate" id="donate">
+      <div class="container donate-inner">
+        <header class="section-header donate-header">
+          <p class="donate-eyebrow">All Motion Sports Non-Profit</p>
+          <h2 class="donate-title">Support a Young Athlete</h2>
+          <p class="donate-subtitle">Help make volleyball accessible to every child.</p>
+        </header>
+
+        <div class="donate-layout">
+          <article class="program-card donate-story">
+            <p>All Motion Sports is a registered non-profit organization dedicated to making volleyball accessible to all children.</p>
+            <p><strong>Your donation helps:</strong></p>
+            <ul class="donate-benefits">
+              <li>Provide scholarships for children facing financial barriers</li>
+              <li>Purchase volleyball equipment and training materials</li>
+              <li>Purchase medicine balls, resistance bands, agility ladders, plyometric boxes, and other athletic development equipment</li>
+              <li>Cover facility rental costs</li>
+              <li>Support tournament and competition opportunities</li>
+              <li>Expand affordable volleyball programs in our community</li>
+            </ul>
+            <p class="donate-closing">Every donation helps create more opportunities for young athletes to learn, grow, and succeed through sport.</p>
+            <a href="https://donate.stripe.com/7sY4gB3IzcqW5CK6bY0Fi08" class="btn btn-primary donate-cta" target="_blank" rel="noopener noreferrer">Support a Young Athlete</a>
+            <p class="donate-secure-note">Secure online donation through Stripe.</p>
+          </article>
+
+          <div class="donate-fundraising">
+            <article class="program-card donate-progress-card" aria-live="polite" aria-atomic="true">
+              <h3 class="donate-progress-heading">Live fundraising progress</h3>
+              <div class="donate-stats-grid">
+                <div class="donate-stat">
+                  <span class="donate-stat-label">Raised</span>
+                  <span class="donate-stat-value" id="donation-raised">$0</span>
+                </div>
+                <div class="donate-stat">
+                  <span class="donate-stat-label">Goal</span>
+                  <span class="donate-stat-value" id="donation-goal">$10,000</span>
+                </div>
+                <div class="donate-stat">
+                  <span class="donate-stat-label">Funded</span>
+                  <span class="donate-stat-value" id="donation-percent">0%</span>
+                </div>
+                <div class="donate-stat">
+                  <span class="donate-stat-label">Donors</span>
+                  <span class="donate-stat-value" id="donation-donors">0</span>
+                </div>
+              </div>
+              <div class="donate-progress-track" role="progressbar" id="donation-progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" aria-label="Fundraising progress">
+                <div class="donate-progress-fill" id="donation-progress-fill"></div>
+                <div class="donate-milestone-markers" id="donation-milestone-markers" aria-hidden="true"></div>
+              </div>
+              <ul class="donate-milestones-list" id="donation-milestones-list"></ul>
+            </article>
+
+            <article class="program-card donate-longterm">
+              <h3 class="donate-longterm-heading">Long-term goal</h3>
+              <p>Our long-term goal is to purchase a <strong>Smash Attack Volleyball Machine</strong> ($4,899), a professional training tool that helps athletes improve their passing, defense, ball control, reaction time, and overall volleyball development.</p>
+            </article>
+
+            <article class="program-card donate-transparency">
+              <h3 class="donate-transparency-heading">Transparency</h3>
+              <dl class="donate-transparency-list">
+                <div class="donate-transparency-row">
+                  <dt>Community Donations Received:</dt>
+                  <dd id="transparency-community">$0</dd>
+                </div>
+                <div class="donate-transparency-row">
+                  <dt>Athletes Supported:</dt>
+                  <dd id="transparency-athletes">0</dd>
+                </div>
+                <div class="donate-transparency-row">
+                  <dt>Scholarships Awarded:</dt>
+                  <dd id="transparency-scholarships">0</dd>
+                </div>
+              </dl>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section class="section registration" id="registration">
       <div class="container">
         <header class="section-header">
@@ -439,6 +520,7 @@
     </div>
   </dialog>
 
+  <script src="donations.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
