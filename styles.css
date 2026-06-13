@@ -643,6 +643,184 @@ body.nav-open {
   color: var(--color-red-dark);
 }
 
+/* Summer Volleyball — July 2026 */
+.summer-volleyball {
+  background: #fafafa;
+}
+
+.summer-volleyball-inner {
+  max-width: 1080px;
+  margin-inline: auto;
+}
+
+.summer-volleyball-header .summer-volleyball-title {
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-size: clamp(1.85rem, 5vw, 2.75rem);
+}
+
+.summer-volleyball-eyebrow {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--color-red-dark);
+  margin: 0 0 0.5rem;
+}
+
+.summer-volleyball-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 380px) 1fr;
+  gap: 1.75rem;
+  align-items: start;
+}
+
+@media (max-width: 900px) {
+  .summer-volleyball-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+.summer-volleyball-overview p {
+  margin: 0 0 0.85rem;
+  font-size: 0.98rem;
+  line-height: 1.6;
+  color: var(--color-black-soft);
+}
+
+.summer-volleyball-meta {
+  margin-bottom: 0.25rem;
+}
+
+.summer-volleyball-fee {
+  margin-bottom: 1rem !important;
+}
+
+.summer-volleyball-fee strong,
+.summer-volleyball-meta strong {
+  color: var(--color-black);
+}
+
+.summer-volleyball-desc:last-of-type {
+  margin-bottom: 1.25rem !important;
+}
+
+.summer-volleyball-register {
+  display: inline-flex;
+  width: 100%;
+  max-width: 100%;
+  text-decoration: none;
+  margin-bottom: 1.5rem;
+  box-sizing: border-box;
+}
+
+.summer-volleyball-register:hover {
+  color: var(--color-white);
+}
+
+.summer-volleyball-qr {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  padding: 1.25rem;
+  background: var(--color-red-soft);
+  border-radius: var(--radius-card);
+  border: 1px dashed rgba(196, 30, 58, 0.35);
+}
+
+.summer-volleyball-qr-label {
+  margin: 0 0 0.75rem !important;
+  font-size: 0.8rem !important;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-red-dark) !important;
+}
+
+.summer-volleyball-qr-frame {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 180px;
+  min-width: 180px;
+  max-width: 200px;
+  margin-inline: auto;
+  padding: 0.75rem;
+  background: var(--color-white);
+  border-radius: 12px;
+  border: 1px solid var(--color-gray-light);
+}
+
+.summer-volleyball-qr-img {
+  display: block;
+  width: 100%;
+  max-width: 180px;
+  height: auto;
+  object-fit: contain;
+}
+
+.summer-volleyball-contact {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 0.95rem;
+  line-height: 1.65;
+  color: var(--color-black-soft);
+}
+
+.summer-volleyball-contact li {
+  margin-bottom: 0.5rem;
+}
+
+.summer-volleyball-contact li:last-child {
+  margin-bottom: 0;
+}
+
+.summer-volleyball-contact a {
+  font-weight: 600;
+}
+
+.summer-volleyball-schedule-heading {
+  font-family: var(--font-display);
+  font-size: clamp(1.5rem, 4vw, 1.85rem);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin: 0 0 1.25rem;
+  color: var(--color-black);
+}
+
+.summer-volleyball-schedule {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 240px), 1fr));
+  gap: 1rem;
+}
+
+.summer-volleyball-session {
+  padding: 1.25rem 1.35rem;
+}
+
+.summer-volleyball-session-day {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  letter-spacing: 0.04em;
+  color: var(--color-red-dark);
+  margin: 0 0 0.65rem !important;
+}
+
+.summer-volleyball-slot {
+  margin: 0 0 0.4rem !important;
+  font-size: 0.92rem !important;
+  line-height: 1.5 !important;
+  color: var(--color-black-soft) !important;
+}
+
+.summer-volleyball-slot:last-child {
+  margin-bottom: 0 !important;
+}
+
+.summer-volleyball-slot strong {
+  color: var(--color-black);
+}
+
 /* Summer Camp */
 .summer-camp {
   background: var(--color-red-soft);
