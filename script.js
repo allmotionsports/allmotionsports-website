@@ -77,7 +77,7 @@
   }
 
   var revealTargets = document.querySelectorAll(
-    ".section-header, .program-card, .about-inner, .summer-volleyball-layout, .camp-weeks-lead, .contact-grid"
+    ".section-header, .program-card, .about-inner, .donate-layout, .summer-volleyball-layout, .camp-weeks-lead, .contact-grid"
   );
   revealTargets.forEach(function (el) {
     el.classList.add("reveal");

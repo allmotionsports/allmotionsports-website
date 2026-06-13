@@ -1,0 +1,9 @@
+{
+  "name": "all-motion-sports",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "@vercel/kv": "^3.0.0",
+    "stripe": "^17.7.0"
+  }
+}
