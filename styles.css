@@ -849,6 +849,15 @@ body.nav-open {
   margin-top: auto;
 }
 
+.fall-pay-method-label {
+  margin: 0 0 0.15rem;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-red-dark);
+}
+
 .fall-pay-btn {
   width: 100%;
   text-align: center;
@@ -877,6 +886,18 @@ body.nav-open {
   color: var(--color-white);
 }
 
+.fall-pay-etransfer-hint {
+  margin: 0.15rem 0 0;
+  font-size: 0.88rem;
+  text-align: center;
+  line-height: 1.45;
+  color: var(--color-gray);
+}
+
+.fall-pay-etransfer-hint a {
+  font-weight: 600;
+}
+
 .fall-programs-policy,
 .fall-programs-payment-info {
   margin-bottom: 1.25rem;
@@ -903,9 +924,20 @@ body.nav-open {
   color: var(--color-black-soft);
 }
 
-.fall-programs-policy p:last-child,
-.fall-payment-secure {
+.fall-programs-policy p:last-child {
   margin-bottom: 0;
+}
+
+.fall-payment-method .fall-payment-secure {
+  margin-bottom: 0;
+}
+
+.fall-payment-method .fall-payment-total {
+  margin-bottom: 0.5rem !important;
+}
+
+.fall-payment-method .fall-payment-same-total {
+  margin-bottom: 0.75rem !important;
 }
 
 .fall-payment-season-fee {
@@ -913,7 +945,136 @@ body.nav-open {
 }
 
 .fall-payment-intro {
-  margin-bottom: 1.15rem !important;
+  margin-bottom: 1.35rem !important;
+}
+
+.fall-payment-methods {
+  display: grid;
+  gap: 1.5rem;
+}
+
+@media (min-width: 900px) {
+  .fall-payment-methods {
+    grid-template-columns: 1fr 1fr;
+    gap: 1.75rem;
+    align-items: start;
+  }
+}
+
+.fall-payment-method {
+  padding: 1.35rem 1.25rem;
+  border-radius: 14px;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  background: #fafafa;
+}
+
+.fall-payment-method-stripe {
+  border-color: rgba(196, 30, 58, 0.18);
+  background: rgba(196, 30, 58, 0.04);
+}
+
+.fall-payment-method-etransfer {
+  border-color: rgba(0, 0, 0, 0.1);
+  background: var(--color-white);
+}
+
+.fall-payment-method-heading {
+  font-family: var(--font-display);
+  font-size: 1.35rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin: 0 0 0.65rem;
+  color: var(--color-black);
+}
+
+.fall-payment-method-lead {
+  margin: 0 0 1rem !important;
+}
+
+.fall-payment-method p {
+  margin: 0 0 0.85rem;
+}
+
+.fall-etransfer-no-checkout {
+  margin: 0 0 1rem !important;
+  padding: 0.75rem 0.9rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  line-height: 1.5;
+  color: var(--color-black-soft);
+  background: rgba(0, 0, 0, 0.04);
+  border-radius: 10px;
+  border: 1px dashed rgba(0, 0, 0, 0.12);
+}
+
+.fall-etransfer-amount-label {
+  font-size: clamp(1rem, 3vw, 1.2rem);
+  letter-spacing: 0.02em;
+}
+
+.fall-etransfer-send-label,
+.fall-etransfer-message-label {
+  margin-bottom: 0.5rem !important;
+  font-weight: 600;
+  color: var(--color-black-soft);
+}
+
+.fall-etransfer-email {
+  display: block;
+  margin: 0 0 1rem;
+  padding: 0.9rem 1rem;
+  font-size: clamp(1rem, 3.5vw, 1.15rem);
+  font-weight: 700;
+  text-align: center;
+  color: var(--color-red-dark);
+  background: var(--color-red-soft);
+  border: 1px solid rgba(196, 30, 58, 0.22);
+  border-radius: 12px;
+  text-decoration: none;
+  word-break: break-all;
+  user-select: all;
+  -webkit-user-select: all;
+}
+
+.fall-etransfer-email:hover,
+.fall-etransfer-email:focus-visible {
+  color: var(--color-red-dark);
+  background: rgba(196, 30, 58, 0.16);
+  box-shadow: 0 0 0 3px rgba(196, 30, 58, 0.2);
+}
+
+.fall-etransfer-list {
+  margin: 0 0 1rem;
+  padding-left: 1.2rem;
+  color: var(--color-black-soft);
+  line-height: 1.6;
+}
+
+.fall-etransfer-list li {
+  margin-bottom: 0.35rem;
+}
+
+.fall-etransfer-example {
+  margin-bottom: 0.85rem !important;
+  padding: 0.75rem 0.9rem;
+  font-size: 0.95rem;
+  background: rgba(0, 0, 0, 0.03);
+  border-radius: 10px;
+  border-left: 3px solid var(--color-red);
+}
+
+.fall-etransfer-plan-note {
+  margin-bottom: 0.85rem !important;
+  font-size: 0.95rem;
+}
+
+.fall-etransfer-policy-link {
+  margin-bottom: 0 !important;
+  font-size: 0.92rem;
+}
+
+.fall-etransfer-policy-link a {
+  font-weight: 600;
 }
 
 .fall-payment-options-compare {
