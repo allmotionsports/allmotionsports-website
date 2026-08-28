@@ -77,7 +77,7 @@
   }
 
   var revealTargets = document.querySelectorAll(
-    ".section-header, .program-card, .about-inner, .donate-layout, .contact-grid"
+    ".section-header, .program-card, .about-inner, .donate-layout, .fall-programs-grid, .contact-grid"
   );
   revealTargets.forEach(function (el) {
     el.classList.add("reveal");
