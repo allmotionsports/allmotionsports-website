@@ -952,7 +952,6 @@ body.nav-open {
 }
 
 .fall-programs-policy,
-.fall-programs-westview,
 .fall-programs-payment-info {
   margin-bottom: 1.25rem;
 }
@@ -971,42 +970,11 @@ body.nav-open {
 }
 
 .fall-programs-policy p,
-.fall-programs-westview p,
 .fall-programs-payment-info p {
   margin: 0 0 0.85rem;
   font-size: 0.98rem;
   line-height: 1.65;
   color: var(--color-black-soft);
-}
-
-.fall-westview-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1.25rem;
-  margin-top: 0.5rem;
-}
-
-@media (max-width: 640px) {
-  .fall-westview-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
-.fall-westview-heading {
-  font-size: 1.05rem;
-  margin: 0 0 0.65rem;
-  color: var(--color-red-dark);
-}
-
-.fall-westview-dates {
-  margin: 0;
-  padding-left: 1.2rem;
-  color: var(--color-black-soft);
-  line-height: 1.65;
-}
-
-.fall-westview-dates li {
-  margin-bottom: 0.35rem;
 }
 
 .fall-programs-policy p:last-child {
