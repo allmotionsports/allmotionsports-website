@@ -707,6 +707,14 @@ body.nav-open {
   color: var(--color-black-soft);
 }
 
+.fall-location-item {
+  margin-bottom: 1rem;
+}
+
+.fall-location-item:last-child {
+  margin-bottom: 0;
+}
+
 .fall-programs-gym-label {
   display: inline-block;
   margin: 0 0 0.65rem;
@@ -827,19 +835,64 @@ body.nav-open {
 }
 
 .fall-schedule-time {
-  margin: 0;
+  margin: 0 0 0.5rem;
   font-family: var(--font-display);
   font-size: 1.35rem;
   letter-spacing: 0.03em;
   color: var(--color-black);
 }
 
+.fall-schedule-venue {
+  margin: 0.35rem 0 0;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: var(--color-gray);
+}
+
+.fall-session-block {
+  margin-bottom: 0.85rem;
+  padding-bottom: 0.85rem;
+  border-bottom: 1px solid rgba(196, 30, 58, 0.12);
+}
+
+.fall-session-block:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
 .fall-program-desc {
-  margin: 0 0 1.35rem;
+  margin: 0 0 1rem;
   flex: 1;
   font-size: 0.98rem;
   line-height: 1.65;
   color: var(--color-black-soft);
+}
+
+.fall-program-price-block {
+  margin: 0 0 1rem;
+  padding: 0.85rem 1rem;
+  background: rgba(0, 0, 0, 0.03);
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.fall-program-price-line {
+  margin: 0 0 0.25rem;
+  font-size: 0.95rem;
+  color: var(--color-black-soft);
+}
+
+.fall-program-price-line:last-child {
+  margin-bottom: 0;
+}
+
+.fall-additional-note {
+  margin: 0 0 1.15rem;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: var(--color-gray);
+  font-style: italic;
 }
 
 .fall-program-payments {
@@ -899,6 +952,7 @@ body.nav-open {
 }
 
 .fall-programs-policy,
+.fall-programs-westview,
 .fall-programs-payment-info {
   margin-bottom: 1.25rem;
 }
@@ -917,11 +971,42 @@ body.nav-open {
 }
 
 .fall-programs-policy p,
+.fall-programs-westview p,
 .fall-programs-payment-info p {
   margin: 0 0 0.85rem;
   font-size: 0.98rem;
   line-height: 1.65;
   color: var(--color-black-soft);
+}
+
+.fall-westview-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25rem;
+  margin-top: 0.5rem;
+}
+
+@media (max-width: 640px) {
+  .fall-westview-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.fall-westview-heading {
+  font-size: 1.05rem;
+  margin: 0 0 0.65rem;
+  color: var(--color-red-dark);
+}
+
+.fall-westview-dates {
+  margin: 0;
+  padding-left: 1.2rem;
+  color: var(--color-black-soft);
+  line-height: 1.65;
+}
+
+.fall-westview-dates li {
+  margin-bottom: 0.35rem;
 }
 
 .fall-programs-policy p:last-child {
