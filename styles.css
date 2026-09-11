@@ -1,4 +1,4 @@
-/* All Motion Sports — red, black, white, modern sports club */
+/* All Motion Sports — red, black, white, modern sports branding */
 
 :root {
   --color-red: #c41e3a;
@@ -673,6 +673,19 @@ body.nav-open {
   font-size: clamp(1.05rem, 2.5vw, 1.2rem);
   font-weight: 600;
   color: var(--color-black-soft);
+}
+
+.fall-open-reg {
+  margin: 1rem auto 0;
+  max-width: 40rem;
+  font-size: 1.02rem;
+  line-height: 1.55;
+  font-weight: 600;
+  color: var(--color-black-soft);
+}
+
+.hero-cta-wrap {
+  margin: 1.5rem 0 0;
 }
 
 .fall-programs-overview {
@@ -1783,6 +1796,17 @@ body.nav-open {
   letter-spacing: 0.04em;
   margin: 0 0 1rem;
   color: var(--color-black);
+}
+
+.registration-info-list {
+  margin: 0 0 1rem;
+  padding-left: 1.25rem;
+  line-height: 1.7;
+  color: var(--color-black-soft);
+}
+
+.registration-info-list li {
+  margin-bottom: 0.35rem;
 }
 
 .registration-info-foot,
