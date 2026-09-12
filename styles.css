@@ -1025,6 +1025,20 @@ body.nav-open {
     gap: 1.75rem;
     align-items: start;
   }
+
+  .fall-payment-methods-single {
+    grid-template-columns: minmax(0, 28rem);
+    justify-content: center;
+  }
+}
+
+.fall-payment-methods-single {
+  justify-items: center;
+}
+
+.fall-payment-methods-single .fall-payment-method {
+  width: 100%;
+  max-width: 28rem;
 }
 
 .fall-payment-method {
