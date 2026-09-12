@@ -120,7 +120,7 @@ These three fields are stored in KV and can be updated without code:
 |--------|---------|
 | `transparency:community_donations_cents` | Community Donations Received (in **cents**, e.g. `50000` = $500) |
 | `transparency:athletes_supported` | Athletes Supported (integer) |
-| `transparency:scholarships_awarded` | Scholarships Awarded (integer) |
+| `transparency:scholarships_awarded` | Financial Assistance Awarded (integer; KV key name retained) |
 
 **Vercel Dashboard → Storage → KV → your database → add/edit keys**
 
@@ -140,10 +140,10 @@ The live progress bar (`totalRaised`, `donorCount`) updates **automatically** fr
 
 ## Milestones (built-in)
 
-- $2,500 — Scholarships Fund  
-- $5,000 — Scholarships + Equipment Fund  
-- $7,500 — Scholarships + Equipment Expansion  
-- $10,000 — Smash Attack Volleyball Machine + Scholarships  
+- $2,500 — Financial Assistance Fund  
+- $5,000 — Financial Assistance + Equipment Fund  
+- $7,500 — Financial Assistance + Equipment Expansion  
+- $10,000 — Smash Attack Volleyball Machine + Financial Assistance  
 
 Edit `lib/donation-config.js` to change milestones or goal.
 
