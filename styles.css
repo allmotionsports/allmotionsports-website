@@ -686,6 +686,98 @@ body.nav-open {
 
 .hero-cta-wrap {
   margin: 1.5rem 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.85rem;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Club announcement — 2027 season */
+.club-announce {
+  background:
+    linear-gradient(180deg, rgba(196, 30, 58, 0.06) 0%, transparent 40%),
+    #f7f7f8;
+  padding-top: clamp(3rem, 7vw, 4.5rem);
+  padding-bottom: clamp(3rem, 7vw, 4.5rem);
+}
+
+.club-announce-inner {
+  max-width: 860px;
+}
+
+.club-announce-card {
+  text-align: center;
+  padding: clamp(1.75rem, 4vw, 2.75rem);
+}
+
+.club-announce-eyebrow {
+  margin: 0 0 0.75rem;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--color-red-dark);
+}
+
+.club-announce-title {
+  font-family: var(--font-display);
+  font-size: clamp(1.85rem, 5vw, 2.75rem);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  line-height: 1.1;
+  margin: 0 0 1rem;
+  color: var(--color-black);
+}
+
+.club-announce-status {
+  margin: 0 0 1.25rem;
+  font-size: clamp(1.05rem, 2.5vw, 1.2rem);
+  font-weight: 700;
+  color: var(--color-red-dark);
+}
+
+.club-announce-card > p {
+  margin: 0 auto 1rem;
+  max-width: 40rem;
+  font-size: 1.05rem;
+  line-height: 1.65;
+  color: var(--color-black-soft);
+}
+
+.club-announce-join {
+  margin-top: 1.75rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.club-announce-join-title {
+  font-family: var(--font-display);
+  font-size: clamp(1.35rem, 3.5vw, 1.75rem);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin: 0 0 0.75rem;
+  color: var(--color-black);
+}
+
+.club-announce-join p {
+  margin: 0 auto 1.25rem;
+  max-width: 36rem;
+  font-size: 1.02rem;
+  line-height: 1.6;
+  color: var(--color-black-soft);
+}
+
+.club-announce-cta-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.85rem;
+  justify-content: center;
+  margin: 0 !important;
+}
+
+.club-announce-cta {
+  min-width: min(100%, 14rem);
 }
 
 .fall-programs-overview {
