@@ -2536,6 +2536,17 @@ body.nav-open {
   color: rgba(255, 255, 255, 0.88);
 }
 
+.tryout-home-flyer {
+  display: block;
+  width: min(520px, 100%);
+  height: auto;
+  max-width: 100%;
+  margin: 1.25rem auto 1.35rem;
+  object-fit: contain;
+  background: #fff;
+  border-radius: 12px;
+}
+
 .tryout-home-banner .btn {
   margin-top: 0.5rem;
 }
@@ -2555,35 +2566,27 @@ body.nav-open {
 
 .tryout-hero {
   position: relative;
-  min-height: min(92vh, 920px);
-  display: grid;
-  align-items: center;
-  padding: clamp(6.5rem, 12vw, 8rem) 1.25rem 3.5rem;
+  display: block;
+  padding: clamp(6.5rem, 12vw, 8rem) 1rem 3.5rem;
   color: #fff;
   text-align: center;
-  overflow: hidden;
   background: #05070a;
 }
 
 .tryout-hero-media {
-  position: absolute;
-  inset: 0;
+  position: relative;
+  width: min(720px, 100%);
+  margin: 0 auto 1.75rem;
 }
 
 .tryout-hero-media img {
+  display: block;
   width: 100%;
-  height: 100%;
-  object-fit: cover;
-  filter: saturate(0.7) brightness(0.35);
-}
-
-.tryout-hero-media::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background:
-    radial-gradient(circle at 50% 20%, rgba(47, 155, 255, 0.35), transparent 42%),
-    linear-gradient(180deg, rgba(5, 7, 10, 0.35), rgba(5, 7, 10, 0.88));
+  height: auto;
+  max-width: 100%;
+  object-fit: contain;
+  background: #fff;
+  border-radius: 12px;
 }
 
 .tryout-hero-content {
@@ -2880,11 +2883,51 @@ body.nav-open {
   color: #9fb0bf !important;
 }
 
-/* Printable / Instagram review flyer */
+/* Official 2027 tryouts flyer */
 .page-flyer {
   margin: 0;
-  background: #111;
-  color: #111;
+  background: #05070a;
+  color: #fff;
+}
+
+.flyer-official {
+  width: min(720px, 100%);
+  margin: 0 auto;
+  padding: 1.25rem 1rem 2.5rem;
+  text-align: center;
+}
+
+.flyer-official-nav {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 0 0 0.75rem;
+}
+
+.flyer-official-nav a {
+  color: #7ec8ff;
+  font-weight: 600;
+}
+
+.flyer-official h1 {
+  margin: 0 0 1rem;
+  color: #fff;
+  font-family: var(--font-display);
+  font-size: clamp(1.8rem, 6vw, 2.6rem);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  line-height: 0.95;
+}
+
+.flyer-official img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  margin: 0 auto 1.25rem;
+  object-fit: contain;
+  background: #fff;
+  border-radius: 12px;
 }
 
 .flyer-sheet {
@@ -2975,10 +3018,17 @@ body.nav-open {
 }
 
 .flyer-review-note {
-  width: min(420px, 92%);
-  margin: 0 auto 2rem;
+  width: min(720px, 92%);
+  margin: 0 auto 1.25rem;
   color: #ddd;
   font-size: 0.9rem;
+}
+
+.flyer-review-note img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
 }
 
 .flyer-review-note a {
